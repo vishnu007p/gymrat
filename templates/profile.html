@@ -1,0 +1,19 @@
+{% load static %}
+{% block content %}
+{% include 'header.html' %}
+<br><br><br>
+<div  align="center" >
+    <div class="card" style="width: 25rem;">
+        <div class="card-body">
+            <h5 class="card-title">Your Weight: {{res.weight}}</h5>
+            <h5 class="card-title">Your Height: {{res.height}}</h5>
+            <h5 class="card-title">Your Age: {{res.age}}</h5>
+            <h5 class="card-title">Your Bmi: {{res.bmi}}</h5>
+            <h5 class="card-title">Your status is : {{res.status}}</h5>
+        </div>
+    </div>
+</div>
+<a href="packages.html" class="btn btn-primary py-md-3 px-md-5 d-none d-lg-block">make payment</a>
+<br><br><br>
+{% include 'footer.html' %}
+{% endblock %}

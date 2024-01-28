@@ -1,0 +1,58 @@
+{% load static %}
+{% block content %}
+{% include 'header.html' %}
+<center>
+<h1 class="m-0 display-4 text-primary text-uppercase">Check out the products</h1></center><br><br>
+<div class="container">
+<!-- our protien  -->
+<div id="protien" class="protien_main">
+    <div class="container">
+       <div class="row">
+          <div class="col-md-12">
+             <div class="titlepage">
+                <h2>Our Protien</h2>
+             </div>
+          </div>
+       </div>
+       <div class="row">
+          <div class="col-md-3 col-sm-6">
+             <div class="protien">
+                <figure><img src="static\img/pro1.png" alt="#"/></figure>
+                <h3>$400</h3>
+                <span> Variations  </span>
+                <a class="read_more mar_top" href="Javascript:void(0)"> Buy Now</a>
+             </div>
+          </div>
+          <div class="col-md-3 col-sm-6">
+             <div class="protien">
+                <figure><img src="static\img/pro2.png" alt="#"/></figure>
+                <h3>$400</h3>
+                <span>  Passages  </span>
+                <a class="read_more mar_top" href="Javascript:void(0)"> Buy Now</a>
+             </div>
+          </div>
+          <div class="col-md-3 col-sm-6">
+             <div class="protien">
+                <figure><img src="static\img/pro3.png" alt="#"/></figure>
+                <h3>$400</h3>
+                <span> Variations </span>
+                <a class="read_more mar_top" href="Javascript:void(0)"> Buy Now</a>
+             </div>
+          </div>
+          <div class="col-md-3 col-sm-6">
+             <div class="protien">
+                <figure><img src="static\img/pro4.png" alt="#"/></figure>
+                <h3>$400</h3>
+                <span> Pedicure </span>
+                <a class="read_more mar_top" href="Javascript:void(0)"> Buy Now</a>
+             </div>
+          </div>
+       </div>
+    </div>
+ </div>
+ <!-- end our protien  -->
+<button class="btn btn-primary w-100 py-3" type="submit">go to cart</button>
+</div>
+
+{% include 'footer.html' %}
+{% endblock %}

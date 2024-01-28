@@ -1,0 +1,27 @@
+{% load static %}
+{% block content %}
+{% include 'header.html' %}
+<div class="bg-dark p-5">
+    <form action="userreg" method="POST" enctype="multipart/form-data">
+        {% csrf_token %}
+        <div class="row g-3">
+            <div class="col-6">
+                <input type="text" class="form-control bg-light border-0 px-4" name="uname" placeholder="Your Name" style="height: 55px; ">
+            </div>
+            <div class="col-6">
+                <input type="email" class="form-control bg-light border-0 px-4" name="uemail" placeholder="Your Email" style="height: 55px;">
+            </div>
+            <div class="col-12">
+                <input type="text" class="form-control bg-light border-0 px-4" name="upassword" placeholder="create your password" style="height: 55px;">
+            </div>
+            <div class="col-12">
+                <textarea class="form-control bg-light border-0 px-4 py-3" rows="4" name="uaim" placeholder="your aim (bodybuilding, multicross, fitness, athletics)"></textarea>
+            </div>
+            <div class="col-12">
+                <button class="btn btn-primary w-100 py-3" type="submit">REGISTER</button>
+            </div>
+        </div>
+    </form>
+</div>
+{% include 'footer.html' %}
+{% endblock %}

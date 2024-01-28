@@ -1,0 +1,23 @@
+{% load static %}
+{% block content %}
+{% include 'header.html' %}
+<head>
+    <script type="text/javascript">
+		function packageamount() {
+			var myCondition = true; // Replace with your own condition here
+			if (myCondition) {
+				document.getElementById('image').src = 'true_image.jpg';
+			} else {
+				document.getElementById('image').src = 'false_image.jpg';
+			}
+		}
+	</script>
+</head>
+<body>
+    <body onload="checkCondition()">
+        <img id="image" src="" alt="QR Image">
+    </body>
+</body>
+
+{% include 'footer.html' %}
+{% endblock %}
